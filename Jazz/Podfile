@@ -1,0 +1,47 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Jazz' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Jazz
+
+	pod 'Kingfisher'
+	pod 'Alamofire' , '~> 4.5'
+	pod 'ReachabilitySwift'
+	pod 'SwiftGifOrigin'
+	source 'https://github.com/CocoaPods/Specs.git'
+	pod 'GoogleMaps'
+  pod 'GooglePlaces'
+	
+	pod 'Firebase/Analytics'
+	pod 'Firebase/Messaging'
+	
+	# pod 'SwiftDate', '~> 4.0'
+	pod 'SwiftDate'
+	
+	pod 'ActionSheetPicker-3.0'
+	pod 'Toast-Swift'
+	pod 'KXHtmlLabel'
+	pod 'IQKeyboardManagerSwift'
+	pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :branch => 'master'
+	pod 'NVActivityIndicatorView'
+	pod 'CWStatusBarNotification'
+	pod 'AFViewShaker'
+	#pod 'ImagePicker'
+	
+	
+	pod 'RealmSwift'
+	pod 'ObjectMapper', '~> 3.3'
+	#pod 'ObjectMapper_RealmSwift'
+	
+	pod 'ObjectMapper+Realm'
+	
+	
+	
+	# Distribution
+	#pod 'HockeySDK'
+
+
+end

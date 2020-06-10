@@ -11,6 +11,24 @@ PODS:
   - GooglePlaces (3.9.0):
     - GoogleMaps/Base (= 3.9.0)
   - IQKeyboardManagerSwift (6.5.5)
+  - Jazz (1.0.0):
+    - ActionSheetPicker-3.0
+    - AFViewShaker
+    - Alamofire (~> 4.5)
+    - CWStatusBarNotification
+    - GoogleMaps
+    - GooglePlaces
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - KXHtmlLabel
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - "ObjectMapper+Realm"
+    - ReachabilitySwift
+    - RealmSwift
+    - SwiftDate
+    - SwiftGifOrigin
+    - Toast-Swift
   - Kingfisher (5.14.0):
     - Kingfisher/Core (= 5.14.0)
   - Kingfisher/Core (5.14.0)
@@ -30,28 +48,10 @@ PODS:
     - Realm (= 5.0.0)
   - SwiftDate (6.1.0)
   - SwiftGifOrigin (1.7.0)
-  - TakafulVouch (1.0.0):
-    - ActionSheetPicker-3.0
-    - AFViewShaker
-    - Alamofire (~> 4.5)
-    - CWStatusBarNotification
-    - GoogleMaps
-    - GooglePlaces
-    - IQKeyboardManagerSwift
-    - Kingfisher
-    - KXHtmlLabel
-    - NVActivityIndicatorView
-    - ObjectMapper
-    - "ObjectMapper+Realm"
-    - ReachabilitySwift
-    - RealmSwift
-    - SwiftDate
-    - SwiftGifOrigin
-    - Toast-Swift
   - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
-  - TakafulVouch (from `../`)
+  - Jazz (from `../`)
 
 SPEC REPOS:
   trunk:
@@ -75,7 +75,7 @@ SPEC REPOS:
     - Toast-Swift
 
 EXTERNAL SOURCES:
-  TakafulVouch:
+  Jazz:
     :path: "../"
 
 SPEC CHECKSUMS:
@@ -86,6 +86,7 @@ SPEC CHECKSUMS:
   GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
   GooglePlaces: 1634d019549b969d40fe0ccb0b9513055adebe01
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  Jazz: 44f5d332297aa1d6b5dfc2d3134f7f292c8c90c1
   Kingfisher: 7b64389a43139c903ec434788344c288217c792d
   KXHtmlLabel: 292f4f33a7a2b42ac66bcca1eb4c4502e33e0903
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
@@ -96,9 +97,8 @@ SPEC CHECKSUMS:
   RealmSwift: c1bdff09b422569dc6881410d9ccf712bcdb79b0
   SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
   SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
-  TakafulVouch: 110d067ecc0a965aa91ba0d8bec22deb2db3b836
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 884352288e5f9163f7ba24aa554260bfe54fac0e
+PODFILE CHECKSUM: 0dd1a1741331be14bfce375fa2edc880ee94a930
 
 COCOAPODS: 1.9.0.beta.3

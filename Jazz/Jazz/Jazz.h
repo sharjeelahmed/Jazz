@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "APPinViewController.h"
+#import "APPinView.h"
 
 //! Project version number for Jazz.
 FOUNDATION_EXPORT double JazzVersionNumber;

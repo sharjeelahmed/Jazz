@@ -6,7 +6,7 @@ target 'Example Project' do
   use_frameworks!
 
   # Pods for Example Project
-	pod 'TakafulVouch' , :path => "../"
-  
+
+  pod 'Jazz' , :path => "../"
 
 end

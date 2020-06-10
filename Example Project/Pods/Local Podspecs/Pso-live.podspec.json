@@ -1,9 +1,9 @@
 {
   "name": "Pso-live",
-  "version": "1.2.3",
-  "summary": "vouch pod for Pso",
-  "description": "Vouch framework for pso . presented by shairjeel ahmed",
-  "homepage": "https://github.com/sharjeelahmed/Pso-live",
+  "version": "1.0.0",
+  "summary": "vouch pod for jazz",
+  "description": "Vouch framework for jazz . presented by shairjeel ahmed",
+  "homepage": "https://github.com/sharjeelahmed/Jazz",
   "license": "MIT",
   "authors": {
     "Shairjeel Ahmed": "sharjeelahmed92@hotmail.com"
@@ -12,8 +12,7 @@
     "ios": "11.0"
   },
   "source": {
-    "git": "https://github.com/sharjeelahmed/Pso-live.git",
-    "commit": "4dea037"
+    "git": "https://github.com/sharjeelahmed/Jazz.git"
   },
   "source_files": "Pso-live/Pso-live/**/*.{h,m,swift}",
   "exclude_files": "Pso-live/*.plist",
@@ -25,7 +24,7 @@
 
     ],
     "Alamofire": [
-
+      "~> 4.5"
     ],
     "ReachabilitySwift": [
 

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FilterCell" id="KGk-i7-Jjw" customClass="FilterCell" customModule="Pso_live" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fX3-S6-k2S">
+                        <rect key="frame" x="15" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Mn6-0O-7zu"/>
+                            <constraint firstAttribute="height" constant="30" id="z1q-Dr-128"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alchohal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B44-3b-spQ" customClass="VSLabel" customModule="Pso_live" customModuleProvider="target">
+                        <rect key="frame" x="57" y="13.5" width="51.5" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvn-Gq-AOQ">
+                        <rect key="frame" x="307" y="13" width="24" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="blackTick"/>
+                        <connections>
+                            <action selector="didTapOnLeftBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vM3-p0-1On"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rP4-Gh-o0a">
+                        <rect key="frame" x="332" y="15" width="29" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="29" id="IHS-UN-NLi"/>
+                            <constraint firstAttribute="height" constant="22" id="u5o-Rj-XlE"/>
+                        </constraints>
+                        <state key="normal" image="blackCross"/>
+                        <connections>
+                            <action selector="didTapOnRightBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qYO-eW-G0d"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6B-Sa-69v">
+                        <rect key="frame" x="0.0" y="43" width="375" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="o6l-1j-182"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fX3-S6-k2S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="7by-ww-JYa"/>
+                    <constraint firstItem="fX3-S6-k2S" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7mY-Yv-2M4"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rP4-Gh-o0a" secondAttribute="trailing" constant="-1" id="9yc-cJ-Aqc"/>
+                    <constraint firstItem="B44-3b-spQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AZD-Cv-3db"/>
+                    <constraint firstItem="P6B-Sa-69v" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="FtG-W3-FxD"/>
+                    <constraint firstItem="P6B-Sa-69v" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="PNc-pj-x2I"/>
+                    <constraint firstItem="B44-3b-spQ" firstAttribute="leading" secondItem="fX3-S6-k2S" secondAttribute="trailing" constant="12" id="RXs-4s-UQ8"/>
+                    <constraint firstItem="P6B-Sa-69v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ftI-3a-bUP"/>
+                    <constraint firstAttribute="bottom" secondItem="P6B-Sa-69v" secondAttribute="bottom" id="tJn-DP-vpU"/>
+                    <constraint firstItem="rP4-Gh-o0a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="wqL-7L-LpM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnLeft" destination="Fvn-Gq-AOQ" id="4d9-I4-R8j"/>
+                <outlet property="btnRight" destination="rP4-Gh-o0a" id="ncn-Uh-crx"/>
+                <outlet property="imageFilterCell" destination="fX3-S6-k2S" id="ls4-n3-p0F"/>
+                <outlet property="lblFilter" destination="B44-3b-spQ" id="Jyq-0M-Cgs"/>
+            </connections>
+            <point key="canvasLocation" x="8.5" y="54"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="blackCross" width="16" height="16"/>
+        <image name="blackTick" width="16" height="16"/>
+    </resources>
+</document>

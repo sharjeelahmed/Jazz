@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Thin</string>
+        </array>
+        <array key="RobotoCondensed-Regular.ttf">
+            <string>RobotoCondensed-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RedeemView" customModule="Pso_live" customModuleProvider="target">
+            <connections>
+                <outlet property="button_closeView" destination="4Cn-Uk-ffV" id="qIj-T6-ACT"/>
+                <outlet property="button_redeem" destination="ea3-im-FEx" id="pFO-hm-leI"/>
+                <outlet property="button_reviewRules" destination="z2R-07-p4K" id="hEd-MR-N5a"/>
+                <outlet property="image_logo" destination="sQE-XE-DFZ" id="dXo-hj-xQb"/>
+                <outlet property="label_customerName" destination="S49-yG-AaU" id="nEI-nD-p5X"/>
+                <outlet property="label_customerSaving" destination="Jku-NB-ipq" id="BmH-S6-seM"/>
+                <outlet property="label_description" destination="Z2v-sW-hsB" id="bta-Cu-988"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watermark" translatesAutoresizingMaskIntoConstraints="NO" id="OeG-pi-zSh">
+                    <rect key="frame" x="21.5" y="43.5" width="267" height="289"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vouch365" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkl-kJ-urW">
+                    <rect key="frame" x="115" y="10" width="80" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cn-Uk-ffV" customClass="VSButton" customModule="Pso_live" customModuleProvider="target">
+                    <rect key="frame" x="277" y="10" width="23" height="23"/>
+                    <state key="normal" image="redeem_cross"/>
+                    <connections>
+                        <action selector="didPressCloseView:" destination="-1" eventType="touchUpInside" id="FPR-yN-9ia"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sQE-XE-DFZ">
+                    <rect key="frame" x="112.5" y="67.5" width="85" height="85"/>
+                    <color key="backgroundColor" red="0.94117647410000005" green="0.38823530080000002" blue="0.1294117719" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="sQE-XE-DFZ" secondAttribute="height" multiplier="1:1" id="Cf0-Qa-Lhl"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z2v-sW-hsB">
+                    <rect key="frame" x="37.5" y="162" width="235" height="64"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <string key="text">"\"You and your guest are invited to enjoy one complimentary &lt;b&gt;Full Serving of Chicken Wings&lt;/b&gt; when a &lt;b&gt;Full Serving of Chicken Wings&lt;/b&gt; is purchased</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer Name : M.Ali" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S49-yG-AaU">
+                    <rect key="frame" x="91" y="235" width="128" height="14.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Savings: Rs. 1300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jku-NB-ipq">
+                    <rect key="frame" x="94.5" y="249.5" width="121" height="18"/>
+                    <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ea3-im-FEx">
+                    <rect key="frame" x="108" y="271.5" width="94" height="36"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Redeem">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didPressRedeem:" destination="-1" eventType="touchUpInside" id="ltd-LC-qzh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offers are subject to Rules of Use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Raw-CV-B5e">
+                    <rect key="frame" x="68.5" y="340" width="173" height="14.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2R-07-p4K" customClass="VSButton" customModule="Pso_live" customModuleProvider="target">
+                    <rect key="frame" x="68.5" y="340" width="173" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Zvw-b6-1VU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                    <state key="normal" title="Review Rules of Use">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressReviewRules:" destination="-1" eventType="touchUpInside" id="xXa-KZ-8b0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94265824556350708" green="0.35372465848922729" blue="0.45159792900085449" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ea3-im-FEx" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.303226" id="2eo-GE-dsF"/>
+                <constraint firstItem="OeG-pi-zSh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.94" id="2qk-pH-8un"/>
+                <constraint firstItem="z2R-07-p4K" firstAttribute="leading" secondItem="Raw-CV-B5e" secondAttribute="leading" id="3Py-GE-T3l"/>
+                <constraint firstItem="OeG-pi-zSh" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.7225" id="7Lg-qM-5od"/>
+                <constraint firstItem="ea3-im-FEx" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.09" id="9JC-56-b5M"/>
+                <constraint firstItem="sQE-XE-DFZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.55" id="9kx-OC-4oA"/>
+                <constraint firstItem="Z2v-sW-hsB" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.16" id="C1I-sO-hYK"/>
+                <constraint firstItem="ea3-im-FEx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EaD-zX-IMs"/>
+                <constraint firstAttribute="trailing" secondItem="4Cn-Uk-ffV" secondAttribute="trailing" constant="10" id="FgP-r0-fve"/>
+                <constraint firstItem="sQE-XE-DFZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IJg-0e-Qtv"/>
+                <constraint firstItem="Raw-CV-B5e" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.7" id="JZz-Ag-4H8"/>
+                <constraint firstItem="Jku-NB-ipq" firstAttribute="top" secondItem="S49-yG-AaU" secondAttribute="bottom" id="LBA-Ko-lUf"/>
+                <constraint firstItem="4Cn-Uk-ffV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Oub-F6-Zxa"/>
+                <constraint firstItem="sQE-XE-DFZ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.212" id="Uws-Gs-TW1"/>
+                <constraint firstItem="Jku-NB-ipq" firstAttribute="centerX" secondItem="ea3-im-FEx" secondAttribute="centerX" id="VaA-Nv-PLC"/>
+                <constraint firstItem="Raw-CV-B5e" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WN2-xz-FZo"/>
+                <constraint firstItem="z2R-07-p4K" firstAttribute="top" secondItem="Raw-CV-B5e" secondAttribute="top" id="WxF-Cl-gRh"/>
+                <constraint firstItem="vkl-kJ-urW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aLM-SM-S5l"/>
+                <constraint firstItem="ea3-im-FEx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.358" id="fTM-J1-MZV"/>
+                <constraint firstItem="z2R-07-p4K" firstAttribute="trailing" secondItem="Raw-CV-B5e" secondAttribute="trailing" id="jZo-Vv-SP2"/>
+                <constraint firstItem="S49-yG-AaU" firstAttribute="centerX" secondItem="ea3-im-FEx" secondAttribute="centerX" id="jsQ-bo-fxH"/>
+                <constraint firstItem="OeG-pi-zSh" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.86129" id="mCi-nK-CIr"/>
+                <constraint firstItem="Z2v-sW-hsB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nGY-9p-ZGA"/>
+                <constraint firstItem="vkl-kJ-urW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="pYm-Ku-aDf"/>
+                <constraint firstItem="Z2v-sW-hsB" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.758065" id="qb3-zH-4We"/>
+                <constraint firstItem="Z2v-sW-hsB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.971" id="rM4-Da-oRt"/>
+                <constraint firstItem="OeG-pi-zSh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="t8W-Yb-J44"/>
+                <constraint firstItem="S49-yG-AaU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.175" id="vWA-Cv-UR3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="6" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="redeem_cross" width="23" height="23"/>
+        <image name="watermark" width="258.5" height="190.5"/>
+    </resources>
+</document>

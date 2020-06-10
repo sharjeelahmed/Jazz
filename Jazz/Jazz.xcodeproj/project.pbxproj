@@ -3,17 +3,426 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF85433F24915B5E00EA7594 /* Jazz.h in Headers */ = {isa = PBXBuildFile; fileRef = DF85433D24915B5E00EA7594 /* Jazz.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0585A91EFE319BF1B94AADB0 /* Pods_Jazz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC2049B8014A5647F4D2321 /* Pods_Jazz.framework */; };
+		DF60A951249187B900404C52 /* APPinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF60A874249187B900404C52 /* APPinViewController.xib */; };
+		DF60A952249187B900404C52 /* RedeemPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF60A875249187B900404C52 /* RedeemPinView.xib */; };
+		DF60A953249187B900404C52 /* FriendSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF60A876249187B900404C52 /* FriendSearch.xib */; };
+		DF60A954249187B900404C52 /* SelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF60A877249187B900404C52 /* SelectionTableViewCell.xib */; };
+		DF60A955249187B900404C52 /* FilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF60A878249187B900404C52 /* FilterCell.xib */; };
+		DF60A956249187B900404C52 /* View_Profile.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF60A879249187B900404C52 /* View_Profile.xib */; };
+		DF60A957249187B900404C52 /* FilterSimpleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF60A87A249187B900404C52 /* FilterSimpleCell.xib */; };
+		DF60A958249187B900404C52 /* GifLoader.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF60A87B249187B900404C52 /* GifLoader.xib */; };
+		DF60A959249187B900404C52 /* ViewOffer.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF60A87C249187B900404C52 /* ViewOffer.xib */; };
+		DF60A95A249187B900404C52 /* VSPINView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF60A87D249187B900404C52 /* VSPINView.xib */; };
+		DF60A95B249187B900404C52 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF60A87E249187B900404C52 /* HomeTableViewCell.xib */; };
+		DF60A95C249187B900404C52 /* RedeemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF60A87F249187B900404C52 /* RedeemView.xib */; };
+		DF60A95D249187B900404C52 /* SucessRedeemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF60A880249187B900404C52 /* SucessRedeemView.xib */; };
+		DF60A95E249187B900404C52 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A883249187B900404C52 /* StorageService.swift */; };
+		DF60A95F249187B900404C52 /* VouchCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A885249187B900404C52 /* VouchCity.swift */; };
+		DF60A960249187B900404C52 /* VouchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A886249187B900404C52 /* VouchUser.swift */; };
+		DF60A961249187B900404C52 /* APPinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF60A888249187B900404C52 /* APPinViewController.m */; };
+		DF60A962249187B900404C52 /* APPinView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF60A889249187B900404C52 /* APPinView.m */; };
+		DF60A963249187B900404C52 /* MPGTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DF60A88C249187B900404C52 /* MPGTextField.m */; };
+		DF60A964249187B900404C52 /* pinViewSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DF60A88E249187B900404C52 /* pinViewSelected.png */; };
+		DF60A965249187B900404C52 /* pinViewSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF60A88F249187B900404C52 /* pinViewSelected@2x.png */; };
+		DF60A966249187B900404C52 /* pinViewUnSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DF60A890249187B900404C52 /* pinViewUnSelected.png */; };
+		DF60A967249187B900404C52 /* splash_loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF60A891249187B900404C52 /* splash_loading.gif */; };
+		DF60A968249187B900404C52 /* pinViewUnSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF60A892249187B900404C52 /* pinViewUnSelected@2x.png */; };
+		DF60A969249187B900404C52 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A894249187B900404C52 /* ServiceLayer.swift */; };
+		DF60A96A249187B900404C52 /* ServiceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A895249187B900404C52 /* ServiceWrapper.swift */; };
+		DF60A96B249187B900404C52 /* Account-Pso.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF60A897249187B900404C52 /* Account-Pso.storyboard */; };
+		DF60A96C249187B900404C52 /* Login-Pso.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF60A898249187B900404C52 /* Login-Pso.storyboard */; };
+		DF60A96D249187B900404C52 /* Main-Pso.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF60A899249187B900404C52 /* Main-Pso.storyboard */; };
+		DF60A96E249187B900404C52 /* GIF-02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A89B249187B900404C52 /* GIF-02.jpg */; };
+		DF60A96F249187B900404C52 /* GIF-16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A89C249187B900404C52 /* GIF-16.jpg */; };
+		DF60A970249187B900404C52 /* GIF-17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A89D249187B900404C52 /* GIF-17.jpg */; };
+		DF60A971249187B900404C52 /* GIF-03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A89E249187B900404C52 /* GIF-03.jpg */; };
+		DF60A972249187B900404C52 /* GIF-29.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A89F249187B900404C52 /* GIF-29.jpg */; };
+		DF60A973249187B900404C52 /* GIF-15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8A0249187B900404C52 /* GIF-15.jpg */; };
+		DF60A974249187B900404C52 /* GIF-01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8A1249187B900404C52 /* GIF-01.jpg */; };
+		DF60A975249187B900404C52 /* GIF-14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8A2249187B900404C52 /* GIF-14.jpg */; };
+		DF60A976249187B900404C52 /* GIF-28.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8A3249187B900404C52 /* GIF-28.jpg */; };
+		DF60A977249187B900404C52 /* GIF-10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8A4249187B900404C52 /* GIF-10.jpg */; };
+		DF60A978249187B900404C52 /* GIF-04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8A5249187B900404C52 /* GIF-04.jpg */; };
+		DF60A979249187B900404C52 /* GIF-38.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8A6249187B900404C52 /* GIF-38.jpg */; };
+		DF60A97A249187B900404C52 /* GIF-39.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8A7249187B900404C52 /* GIF-39.jpg */; };
+		DF60A97B249187B900404C52 /* GIF-05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8A8249187B900404C52 /* GIF-05.jpg */; };
+		DF60A97C249187B900404C52 /* GIF-11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8A9249187B900404C52 /* GIF-11.jpg */; };
+		DF60A97D249187B900404C52 /* GIF-07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8AA249187B900404C52 /* GIF-07.jpg */; };
+		DF60A97E249187B900404C52 /* GIF-13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8AB249187B900404C52 /* GIF-13.jpg */; };
+		DF60A97F249187B900404C52 /* GIF-12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8AC249187B900404C52 /* GIF-12.jpg */; };
+		DF60A980249187B900404C52 /* GIF-06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8AD249187B900404C52 /* GIF-06.jpg */; };
+		DF60A981249187B900404C52 /* GIF-48.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8AE249187B900404C52 /* GIF-48.jpg */; };
+		DF60A982249187B900404C52 /* splash11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8AF249187B900404C52 /* splash11.jpg */; };
+		DF60A983249187B900404C52 /* GIF-40.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8B0249187B900404C52 /* GIF-40.jpg */; };
+		DF60A984249187B900404C52 /* GIF-41.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8B1249187B900404C52 /* GIF-41.jpg */; };
+		DF60A985249187B900404C52 /* GIF-43.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8B2249187B900404C52 /* GIF-43.jpg */; };
+		DF60A986249187B900404C52 /* GIF-42.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8B3249187B900404C52 /* GIF-42.jpg */; };
+		DF60A987249187B900404C52 /* GIF-46.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8B4249187B900404C52 /* GIF-46.jpg */; };
+		DF60A988249187B900404C52 /* GIF-47.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8B5249187B900404C52 /* GIF-47.jpg */; };
+		DF60A989249187B900404C52 /* GIF-45.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8B6249187B900404C52 /* GIF-45.jpg */; };
+		DF60A98A249187B900404C52 /* GIF-44.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8B7249187B900404C52 /* GIF-44.jpg */; };
+		DF60A98B249187B900404C52 /* GIF-23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8B8249187B900404C52 /* GIF-23.jpg */; };
+		DF60A98C249187B900404C52 /* GIF-37.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8B9249187B900404C52 /* GIF-37.jpg */; };
+		DF60A98D249187B900404C52 /* GIF-36.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8BA249187B900404C52 /* GIF-36.jpg */; };
+		DF60A98E249187B900404C52 /* GIF-22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8BB249187B900404C52 /* GIF-22.jpg */; };
+		DF60A98F249187B900404C52 /* GIF-08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8BC249187B900404C52 /* GIF-08.jpg */; };
+		DF60A990249187B900404C52 /* GIF-34.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8BD249187B900404C52 /* GIF-34.jpg */; };
+		DF60A991249187B900404C52 /* GIF-20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8BE249187B900404C52 /* GIF-20.jpg */; };
+		DF60A992249187B900404C52 /* GIF-21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8BF249187B900404C52 /* GIF-21.jpg */; };
+		DF60A993249187B900404C52 /* GIF-35.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8C0249187B900404C52 /* GIF-35.jpg */; };
+		DF60A994249187B900404C52 /* GIF-09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8C1249187B900404C52 /* GIF-09.jpg */; };
+		DF60A995249187B900404C52 /* GIF-31.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8C2249187B900404C52 /* GIF-31.jpg */; };
+		DF60A996249187B900404C52 /* GIF-25.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8C3249187B900404C52 /* GIF-25.jpg */; };
+		DF60A997249187B900404C52 /* GIF-19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8C4249187B900404C52 /* GIF-19.jpg */; };
+		DF60A998249187B900404C52 /* GIF-18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8C5249187B900404C52 /* GIF-18.jpg */; };
+		DF60A999249187B900404C52 /* GIF-24.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8C6249187B900404C52 /* GIF-24.jpg */; };
+		DF60A99A249187B900404C52 /* GIF-30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8C7249187B900404C52 /* GIF-30.jpg */; };
+		DF60A99B249187B900404C52 /* GIF-26.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8C8249187B900404C52 /* GIF-26.jpg */; };
+		DF60A99C249187B900404C52 /* GIF-32.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8C9249187B900404C52 /* GIF-32.jpg */; };
+		DF60A99D249187B900404C52 /* GIF-33.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8CA249187B900404C52 /* GIF-33.jpg */; };
+		DF60A99E249187B900404C52 /* GIF-27.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8CB249187B900404C52 /* GIF-27.jpg */; };
+		DF60A99F249187B900404C52 /* A.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8CD249187B900404C52 /* A.xcassets */; };
+		DF60A9A0249187B900404C52 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8CE249187B900404C52 /* loader.gif */; };
+		DF60A9A1249187B900404C52 /* Jazz.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF60A8CF249187B900404C52 /* Jazz.plist */; };
+		DF60A9A2249187B900404C52 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8D1249187B900404C52 /* Offer.swift */; };
+		DF60A9A3249187B900404C52 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8D2249187B900404C52 /* Location.swift */; };
+		DF60A9A4249187B900404C52 /* CompanyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8D3249187B900404C52 /* CompanyDetail.swift */; };
+		DF60A9A5249187B900404C52 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8D4249187B900404C52 /* Friend.swift */; };
+		DF60A9A6249187B900404C52 /* Ping.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8D5249187B900404C52 /* Ping.swift */; };
+		DF60A9A7249187B900404C52 /* NotificationVeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8D6249187B900404C52 /* NotificationVeer.swift */; };
+		DF60A9A8249187B900404C52 /* HomeSaving.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8D7249187B900404C52 /* HomeSaving.swift */; };
+		DF60A9A9249187B900404C52 /* VoucherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8D8249187B900404C52 /* VoucherData.swift */; };
+		DF60A9AA249187B900404C52 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8D9249187B900404C52 /* UserProfile.swift */; };
+		DF60A9AB249187B900404C52 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8DA249187B900404C52 /* User.swift */; };
+		DF60A9AC249187B900404C52 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8DB249187B900404C52 /* Category.swift */; };
+		DF60A9AD249187B900404C52 /* Voucher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8DC249187B900404C52 /* Voucher.swift */; };
+		DF60A9AE249187B900404C52 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8DD249187B900404C52 /* History.swift */; };
+		DF60A9AF249187B900404C52 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8DE249187B900404C52 /* Badge.swift */; };
+		DF60A9B0249187B900404C52 /* Vouchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8DF249187B900404C52 /* Vouchers.swift */; };
+		DF60A9B1249187B900404C52 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8E0249187B900404C52 /* Level.swift */; };
+		DF60A9B2249187B900404C52 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8E1249187B900404C52 /* PopUp.swift */; };
+		DF60A9B3249187B900404C52 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8E3249187B900404C52 /* Constants.swift */; };
+		DF60A9B4249187B900404C52 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8E4249187B900404C52 /* Utilities.swift */; };
+		DF60A9B5249187B900404C52 /* VSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8E5249187B900404C52 /* VSLabel.swift */; };
+		DF60A9B6249187B900404C52 /* VSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8E6249187B900404C52 /* VSButton.swift */; };
+		DF60A9B7249187B900404C52 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8E7249187B900404C52 /* Countries.swift */; };
+		DF60A9B8249187B900404C52 /* UIBarButtonItem.ActionSheetPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8E8249187B900404C52 /* UIBarButtonItem.ActionSheetPicker.swift */; };
+		DF60A9B9249187B900404C52 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8E9249187B900404C52 /* extension.swift */; };
+		DF60A9BA249187B900404C52 /* UIColor.StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8EA249187B900404C52 /* UIColor.StyleGuide.swift */; };
+		DF60A9BB249187B900404C52 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8EB249187B900404C52 /* String.swift */; };
+		DF60A9BC249187B900404C52 /* FiltersArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8EC249187B900404C52 /* FiltersArray.swift */; };
+		DF60A9BD249187B900404C52 /* VSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8ED249187B900404C52 /* VSTextField.swift */; };
+		DF60A9BE249187B900404C52 /* MPGTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = DF60A8EF249187B900404C52 /* MPGTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF60A9BF249187B900404C52 /* APPinViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DF60A8F0249187B900404C52 /* APPinViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF60A9C0249187B900404C52 /* APPinView.h in Headers */ = {isa = PBXBuildFile; fileRef = DF60A8F1249187B900404C52 /* APPinView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF60A9C1249187B900404C52 /* Jazz.h in Headers */ = {isa = PBXBuildFile; fileRef = DF60A8F2249187B900404C52 /* Jazz.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF60A9C2249187B900404C52 /* Bootstraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8F3249187B900404C52 /* Bootstraper.swift */; };
+		DF60A9C3249187B900404C52 /* PingSentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8F5249187B900404C52 /* PingSentViewController.swift */; };
+		DF60A9C4249187B900404C52 /* ItemListingMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8F6249187B900404C52 /* ItemListingMapViewController.swift */; };
+		DF60A9C5249187B900404C52 /* PingHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8F7249187B900404C52 /* PingHistoryViewController.swift */; };
+		DF60A9C6249187B900404C52 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8F8249187B900404C52 /* SearchTableViewController.swift */; };
+		DF60A9C7249187B900404C52 /* PurchaseHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8F9249187B900404C52 /* PurchaseHistoryViewController.swift */; };
+		DF60A9C8249187B900404C52 /* CreatePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8FA249187B900404C52 /* CreatePinViewController.swift */; };
+		DF60A9C9249187B900404C52 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8FB249187B900404C52 /* TutorialPageViewController.swift */; };
+		DF60A9CA249187B900404C52 /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8FC249187B900404C52 /* LevelViewController.swift */; };
+		DF60A9CB249187B900404C52 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8FD249187B900404C52 /* LocationsViewController.swift */; };
+		DF60A9CC249187B900404C52 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8FE249187B900404C52 /* RootViewController.swift */; };
+		DF60A9CD249187B900404C52 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A8FF249187B900404C52 /* ProductViewController.swift */; };
+		DF60A9CE249187B900404C52 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A900249187B900404C52 /* DetailViewController.swift */; };
+		DF60A9CF249187B900404C52 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A901249187B900404C52 /* LoaderViewController.swift */; };
+		DF60A9D0249187B900404C52 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A902249187B900404C52 /* WelcomeViewController.swift */; };
+		DF60A9D1249187B900404C52 /* VouchFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A903249187B900404C52 /* VouchFriendsViewController.swift */; };
+		DF60A9D2249187B900404C52 /* RootListMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A904249187B900404C52 /* RootListMapViewController.swift */; };
+		DF60A9D3249187B900404C52 /* VouchPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A905249187B900404C52 /* VouchPointsViewController.swift */; };
+		DF60A9D4249187B900404C52 /* FullScreenPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A906249187B900404C52 /* FullScreenPopUpViewController.swift */; };
+		DF60A9D5249187B900404C52 /* VouchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A907249187B900404C52 /* VouchManager.swift */; };
+		DF60A9D6249187B900404C52 /* RootOfferDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A908249187B900404C52 /* RootOfferDetailsViewController.swift */; };
+		DF60A9D7249187B900404C52 /* AllLevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A909249187B900404C52 /* AllLevelsViewController.swift */; };
+		DF60A9D8249187B900404C52 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A90A249187B900404C52 /* HomeViewController.swift */; };
+		DF60A9D9249187B900404C52 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A90B249187B900404C52 /* TutorialViewController.swift */; };
+		DF60A9DA249187B900404C52 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A90C249187B900404C52 /* OfferViewController.swift */; };
+		DF60A9DB249187B900404C52 /* AllBadgesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A90D249187B900404C52 /* AllBadgesViewController.swift */; };
+		DF60A9DC249187B900404C52 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A90E249187B900404C52 /* testViewController.swift */; };
+		DF60A9DD249187B900404C52 /* PinViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A90F249187B900404C52 /* PinViewViewController.swift */; };
+		DF60A9DE249187B900404C52 /* AlternateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A910249187B900404C52 /* AlternateTableViewController.swift */; };
+		DF60A9DF249187B900404C52 /* MyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A911249187B900404C52 /* MyInformationViewController.swift */; };
+		DF60A9E0249187B900404C52 /* RootFavPingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A912249187B900404C52 /* RootFavPingsViewController.swift */; };
+		DF60A9E1249187B900404C52 /* PingReceivedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A913249187B900404C52 /* PingReceivedViewController.swift */; };
+		DF60A9E2249187B900404C52 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A914249187B900404C52 /* BrowserViewController.swift */; };
+		DF60A9E3249187B900404C52 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A915249187B900404C52 /* FavouriteViewController.swift */; };
+		DF60A9E4249187B900404C52 /* PingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A916249187B900404C52 /* PingsViewController.swift */; };
+		DF60A9E5249187B900404C52 /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A917249187B900404C52 /* InviteViewController.swift */; };
+		DF60A9E6249187B900404C52 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A918249187B900404C52 /* ProfileViewController.swift */; };
+		DF60A9E7249187B900404C52 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A919249187B900404C52 /* DetailsViewController.swift */; };
+		DF60A9E8249187BA00404C52 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A91A249187B900404C52 /* NotificationViewController.swift */; };
+		DF60A9E9249187BA00404C52 /* VouchMapListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A91B249187B900404C52 /* VouchMapListingViewController.swift */; };
+		DF60A9EA249187BA00404C52 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A91C249187B900404C52 /* AccountViewController.swift */; };
+		DF60A9EB249187BA00404C52 /* SucessRedeemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A91E249187B900404C52 /* SucessRedeemView.swift */; };
+		DF60A9EC249187BA00404C52 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A920249187B900404C52 /* HistoryTableViewCell.swift */; };
+		DF60A9ED249187BA00404C52 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A921249187B900404C52 /* FilterCell.swift */; };
+		DF60A9EE249187BA00404C52 /* DataWithLockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A922249187B900404C52 /* DataWithLockTableViewCell.swift */; };
+		DF60A9EF249187BA00404C52 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A923249187B900404C52 /* HomeTableViewCell.swift */; };
+		DF60A9F0249187BA00404C52 /* MainDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A924249187B900404C52 /* MainDetailsTableViewCell.swift */; };
+		DF60A9F1249187BA00404C52 /* OfferedInProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A925249187B900404C52 /* OfferedInProductTableViewCell.swift */; };
+		DF60A9F2249187BA00404C52 /* IconCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A926249187B900404C52 /* IconCollectionViewCell.swift */; };
+		DF60A9F3249187BA00404C52 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A927249187B900404C52 /* FavouriteTableViewCell.swift */; };
+		DF60A9F4249187BA00404C52 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A928249187B900404C52 /* LocationTableViewCell.swift */; };
+		DF60A9F5249187BA00404C52 /* AlternateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A929249187B900404C52 /* AlternateTableViewCell.swift */; };
+		DF60A9F6249187BA00404C52 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A92A249187B900404C52 /* AccountTableViewCell.swift */; };
+		DF60A9F7249187BA00404C52 /* BannerImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A92B249187B900404C52 /* BannerImageCollectionViewCell.swift */; };
+		DF60A9F8249187BA00404C52 /* DataWithoutLockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A92C249187B900404C52 /* DataWithoutLockTableViewCell.swift */; };
+		DF60A9F9249187BA00404C52 /* NotificationImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A92D249187B900404C52 /* NotificationImageTableViewCell.swift */; };
+		DF60A9FA249187BA00404C52 /* DetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A92E249187B900404C52 /* DetailsCollectionViewCell.swift */; };
+		DF60A9FB249187BA00404C52 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A92F249187B900404C52 /* BannerCollectionViewCell.swift */; };
+		DF60A9FC249187BA00404C52 /* PingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A930249187B900404C52 /* PingTableViewCell.swift */; };
+		DF60A9FD249187BA00404C52 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A931249187B900404C52 /* DataCollectionViewCell.swift */; };
+		DF60A9FE249187BA00404C52 /* AreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A932249187B900404C52 /* AreaTableViewCell.swift */; };
+		DF60A9FF249187BA00404C52 /* OfferDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A933249187B900404C52 /* OfferDetailsTableViewCell.swift */; };
+		DF60AA00249187BA00404C52 /* SelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A934249187B900404C52 /* SelectionTableViewCell.swift */; };
+		DF60AA01249187BA00404C52 /* OptionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A935249187B900404C52 /* OptionsCollectionViewCell.swift */; };
+		DF60AA02249187BA00404C52 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A936249187B900404C52 /* CategoryTableViewCell.swift */; };
+		DF60AA03249187BA00404C52 /* DashboardOfferIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A937249187B900404C52 /* DashboardOfferIconCell.swift */; };
+		DF60AA04249187BA00404C52 /* ItemListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A938249187B900404C52 /* ItemListTableViewCell.swift */; };
+		DF60AA05249187BA00404C52 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A939249187B900404C52 /* ProductTableViewCell.swift */; };
+		DF60AA06249187BA00404C52 /* DetailMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A93A249187B900404C52 /* DetailMapTableViewCell.swift */; };
+		DF60AA07249187BA00404C52 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A93B249187B900404C52 /* SearchTableViewCell.swift */; };
+		DF60AA08249187BA00404C52 /* AllLevelBagdeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A93C249187B900404C52 /* AllLevelBagdeTableViewCell.swift */; };
+		DF60AA09249187BA00404C52 /* CellPopUpTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A93D249187B900404C52 /* CellPopUpTable.swift */; };
+		DF60AA0A249187BA00404C52 /* DashboardOfferBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A93E249187B900404C52 /* DashboardOfferBannerCell.swift */; };
+		DF60AA0B249187BA00404C52 /* DetailListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A93F249187B900404C52 /* DetailListCollectionViewCell.swift */; };
+		DF60AA0C249187BA00404C52 /* CompanyDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A940249187B900404C52 /* CompanyDescriptionTableViewCell.swift */; };
+		DF60AA0D249187BA00404C52 /* NotificationTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A941249187B900404C52 /* NotificationTextTableViewCell.swift */; };
+		DF60AA0E249187BA00404C52 /* HomeVendorLogoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A942249187B900404C52 /* HomeVendorLogoTableViewCell.swift */; };
+		DF60AA0F249187BA00404C52 /* DataWithSwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A943249187B900404C52 /* DataWithSwitchTableViewCell.swift */; };
+		DF60AA10249187BA00404C52 /* VoucherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A944249187B900404C52 /* VoucherTableViewCell.swift */; };
+		DF60AA11249187BA00404C52 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A945249187B900404C52 /* HeaderTableViewCell.swift */; };
+		DF60AA12249187BA00404C52 /* GifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A946249187B900404C52 /* GifLoader.swift */; };
+		DF60AA13249187BA00404C52 /* View_Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A947249187B900404C52 /* View_Profile.swift */; };
+		DF60AA14249187BA00404C52 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A948249187B900404C52 /* FilterView.swift */; };
+		DF60AA15249187BA00404C52 /* RedeemPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A949249187B900404C52 /* RedeemPinView.swift */; };
+		DF60AA16249187BA00404C52 /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A94A249187B900404C52 /* SelectionView.swift */; };
+		DF60AA17249187BA00404C52 /* ViewOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A94B249187B900404C52 /* ViewOffer.swift */; };
+		DF60AA18249187BA00404C52 /* RedeemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A94C249187B900404C52 /* RedeemView.swift */; };
+		DF60AA19249187BA00404C52 /* FilterSimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A94D249187B900404C52 /* FilterSimpleCell.swift */; };
+		DF60AA1A249187BA00404C52 /* VSPINView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A94E249187B900404C52 /* VSPINView.swift */; };
+		DF60AA1B249187BA00404C52 /* FriendSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60A94F249187B900404C52 /* FriendSearch.swift */; };
+		DF60AA1C249187BA00404C52 /* Voucher365-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = DF60A950249187B900404C52 /* Voucher365-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5ED1DA8AC927167027BA44ED /* Pods-Jazz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jazz.release.xcconfig"; path = "Target Support Files/Pods-Jazz/Pods-Jazz.release.xcconfig"; sourceTree = "<group>"; };
+		901417C713960B4AAA28F0D2 /* Pods-Jazz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jazz.debug.xcconfig"; path = "Target Support Files/Pods-Jazz/Pods-Jazz.debug.xcconfig"; sourceTree = "<group>"; };
+		9DC2049B8014A5647F4D2321 /* Pods_Jazz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jazz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF60A874249187B900404C52 /* APPinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APPinViewController.xib; sourceTree = "<group>"; };
+		DF60A875249187B900404C52 /* RedeemPinView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedeemPinView.xib; sourceTree = "<group>"; };
+		DF60A876249187B900404C52 /* FriendSearch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendSearch.xib; sourceTree = "<group>"; };
+		DF60A877249187B900404C52 /* SelectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectionTableViewCell.xib; sourceTree = "<group>"; };
+		DF60A878249187B900404C52 /* FilterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterCell.xib; sourceTree = "<group>"; };
+		DF60A879249187B900404C52 /* View_Profile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View_Profile.xib; sourceTree = "<group>"; };
+		DF60A87A249187B900404C52 /* FilterSimpleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterSimpleCell.xib; sourceTree = "<group>"; };
+		DF60A87B249187B900404C52 /* GifLoader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GifLoader.xib; sourceTree = "<group>"; };
+		DF60A87C249187B900404C52 /* ViewOffer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewOffer.xib; sourceTree = "<group>"; };
+		DF60A87D249187B900404C52 /* VSPINView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSPINView.xib; sourceTree = "<group>"; };
+		DF60A87E249187B900404C52 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		DF60A87F249187B900404C52 /* RedeemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedeemView.xib; sourceTree = "<group>"; };
+		DF60A880249187B900404C52 /* SucessRedeemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SucessRedeemView.xib; sourceTree = "<group>"; };
+		DF60A883249187B900404C52 /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		DF60A885249187B900404C52 /* VouchCity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VouchCity.swift; sourceTree = "<group>"; };
+		DF60A886249187B900404C52 /* VouchUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VouchUser.swift; sourceTree = "<group>"; };
+		DF60A888249187B900404C52 /* APPinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPinViewController.m; sourceTree = "<group>"; };
+		DF60A889249187B900404C52 /* APPinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPinView.m; sourceTree = "<group>"; };
+		DF60A88C249187B900404C52 /* MPGTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGTextField.m; sourceTree = "<group>"; };
+		DF60A88E249187B900404C52 /* pinViewSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinViewSelected.png; sourceTree = "<group>"; };
+		DF60A88F249187B900404C52 /* pinViewSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinViewSelected@2x.png"; sourceTree = "<group>"; };
+		DF60A890249187B900404C52 /* pinViewUnSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinViewUnSelected.png; sourceTree = "<group>"; };
+		DF60A891249187B900404C52 /* splash_loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = splash_loading.gif; sourceTree = "<group>"; };
+		DF60A892249187B900404C52 /* pinViewUnSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinViewUnSelected@2x.png"; sourceTree = "<group>"; };
+		DF60A894249187B900404C52 /* ServiceLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		DF60A895249187B900404C52 /* ServiceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceWrapper.swift; sourceTree = "<group>"; };
+		DF60A897249187B900404C52 /* Account-Pso.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Account-Pso.storyboard"; sourceTree = "<group>"; };
+		DF60A898249187B900404C52 /* Login-Pso.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Login-Pso.storyboard"; sourceTree = "<group>"; };
+		DF60A899249187B900404C52 /* Main-Pso.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-Pso.storyboard"; sourceTree = "<group>"; };
+		DF60A89B249187B900404C52 /* GIF-02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-02.jpg"; sourceTree = "<group>"; };
+		DF60A89C249187B900404C52 /* GIF-16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-16.jpg"; sourceTree = "<group>"; };
+		DF60A89D249187B900404C52 /* GIF-17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-17.jpg"; sourceTree = "<group>"; };
+		DF60A89E249187B900404C52 /* GIF-03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-03.jpg"; sourceTree = "<group>"; };
+		DF60A89F249187B900404C52 /* GIF-29.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-29.jpg"; sourceTree = "<group>"; };
+		DF60A8A0249187B900404C52 /* GIF-15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-15.jpg"; sourceTree = "<group>"; };
+		DF60A8A1249187B900404C52 /* GIF-01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-01.jpg"; sourceTree = "<group>"; };
+		DF60A8A2249187B900404C52 /* GIF-14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-14.jpg"; sourceTree = "<group>"; };
+		DF60A8A3249187B900404C52 /* GIF-28.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-28.jpg"; sourceTree = "<group>"; };
+		DF60A8A4249187B900404C52 /* GIF-10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-10.jpg"; sourceTree = "<group>"; };
+		DF60A8A5249187B900404C52 /* GIF-04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-04.jpg"; sourceTree = "<group>"; };
+		DF60A8A6249187B900404C52 /* GIF-38.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-38.jpg"; sourceTree = "<group>"; };
+		DF60A8A7249187B900404C52 /* GIF-39.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-39.jpg"; sourceTree = "<group>"; };
+		DF60A8A8249187B900404C52 /* GIF-05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-05.jpg"; sourceTree = "<group>"; };
+		DF60A8A9249187B900404C52 /* GIF-11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-11.jpg"; sourceTree = "<group>"; };
+		DF60A8AA249187B900404C52 /* GIF-07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-07.jpg"; sourceTree = "<group>"; };
+		DF60A8AB249187B900404C52 /* GIF-13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-13.jpg"; sourceTree = "<group>"; };
+		DF60A8AC249187B900404C52 /* GIF-12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-12.jpg"; sourceTree = "<group>"; };
+		DF60A8AD249187B900404C52 /* GIF-06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-06.jpg"; sourceTree = "<group>"; };
+		DF60A8AE249187B900404C52 /* GIF-48.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-48.jpg"; sourceTree = "<group>"; };
+		DF60A8AF249187B900404C52 /* splash11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash11.jpg; sourceTree = "<group>"; };
+		DF60A8B0249187B900404C52 /* GIF-40.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-40.jpg"; sourceTree = "<group>"; };
+		DF60A8B1249187B900404C52 /* GIF-41.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-41.jpg"; sourceTree = "<group>"; };
+		DF60A8B2249187B900404C52 /* GIF-43.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-43.jpg"; sourceTree = "<group>"; };
+		DF60A8B3249187B900404C52 /* GIF-42.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-42.jpg"; sourceTree = "<group>"; };
+		DF60A8B4249187B900404C52 /* GIF-46.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-46.jpg"; sourceTree = "<group>"; };
+		DF60A8B5249187B900404C52 /* GIF-47.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-47.jpg"; sourceTree = "<group>"; };
+		DF60A8B6249187B900404C52 /* GIF-45.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-45.jpg"; sourceTree = "<group>"; };
+		DF60A8B7249187B900404C52 /* GIF-44.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-44.jpg"; sourceTree = "<group>"; };
+		DF60A8B8249187B900404C52 /* GIF-23.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-23.jpg"; sourceTree = "<group>"; };
+		DF60A8B9249187B900404C52 /* GIF-37.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-37.jpg"; sourceTree = "<group>"; };
+		DF60A8BA249187B900404C52 /* GIF-36.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-36.jpg"; sourceTree = "<group>"; };
+		DF60A8BB249187B900404C52 /* GIF-22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-22.jpg"; sourceTree = "<group>"; };
+		DF60A8BC249187B900404C52 /* GIF-08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-08.jpg"; sourceTree = "<group>"; };
+		DF60A8BD249187B900404C52 /* GIF-34.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-34.jpg"; sourceTree = "<group>"; };
+		DF60A8BE249187B900404C52 /* GIF-20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-20.jpg"; sourceTree = "<group>"; };
+		DF60A8BF249187B900404C52 /* GIF-21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-21.jpg"; sourceTree = "<group>"; };
+		DF60A8C0249187B900404C52 /* GIF-35.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-35.jpg"; sourceTree = "<group>"; };
+		DF60A8C1249187B900404C52 /* GIF-09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-09.jpg"; sourceTree = "<group>"; };
+		DF60A8C2249187B900404C52 /* GIF-31.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-31.jpg"; sourceTree = "<group>"; };
+		DF60A8C3249187B900404C52 /* GIF-25.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-25.jpg"; sourceTree = "<group>"; };
+		DF60A8C4249187B900404C52 /* GIF-19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-19.jpg"; sourceTree = "<group>"; };
+		DF60A8C5249187B900404C52 /* GIF-18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-18.jpg"; sourceTree = "<group>"; };
+		DF60A8C6249187B900404C52 /* GIF-24.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-24.jpg"; sourceTree = "<group>"; };
+		DF60A8C7249187B900404C52 /* GIF-30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-30.jpg"; sourceTree = "<group>"; };
+		DF60A8C8249187B900404C52 /* GIF-26.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-26.jpg"; sourceTree = "<group>"; };
+		DF60A8C9249187B900404C52 /* GIF-32.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-32.jpg"; sourceTree = "<group>"; };
+		DF60A8CA249187B900404C52 /* GIF-33.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-33.jpg"; sourceTree = "<group>"; };
+		DF60A8CB249187B900404C52 /* GIF-27.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-27.jpg"; sourceTree = "<group>"; };
+		DF60A8CD249187B900404C52 /* A.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = A.xcassets; sourceTree = "<group>"; };
+		DF60A8CE249187B900404C52 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
+		DF60A8CF249187B900404C52 /* Jazz.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Jazz.plist; sourceTree = "<group>"; };
+		DF60A8D1249187B900404C52 /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		DF60A8D2249187B900404C52 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		DF60A8D3249187B900404C52 /* CompanyDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDetail.swift; sourceTree = "<group>"; };
+		DF60A8D4249187B900404C52 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		DF60A8D5249187B900404C52 /* Ping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ping.swift; sourceTree = "<group>"; };
+		DF60A8D6249187B900404C52 /* NotificationVeer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationVeer.swift; sourceTree = "<group>"; };
+		DF60A8D7249187B900404C52 /* HomeSaving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSaving.swift; sourceTree = "<group>"; };
+		DF60A8D8249187B900404C52 /* VoucherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoucherData.swift; sourceTree = "<group>"; };
+		DF60A8D9249187B900404C52 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		DF60A8DA249187B900404C52 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DF60A8DB249187B900404C52 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DF60A8DC249187B900404C52 /* Voucher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Voucher.swift; sourceTree = "<group>"; };
+		DF60A8DD249187B900404C52 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		DF60A8DE249187B900404C52 /* Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		DF60A8DF249187B900404C52 /* Vouchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vouchers.swift; sourceTree = "<group>"; };
+		DF60A8E0249187B900404C52 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		DF60A8E1249187B900404C52 /* PopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
+		DF60A8E3249187B900404C52 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DF60A8E4249187B900404C52 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		DF60A8E5249187B900404C52 /* VSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSLabel.swift; sourceTree = "<group>"; };
+		DF60A8E6249187B900404C52 /* VSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSButton.swift; sourceTree = "<group>"; };
+		DF60A8E7249187B900404C52 /* Countries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		DF60A8E8249187B900404C52 /* UIBarButtonItem.ActionSheetPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.ActionSheetPicker.swift; sourceTree = "<group>"; };
+		DF60A8E9249187B900404C52 /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		DF60A8EA249187B900404C52 /* UIColor.StyleGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.StyleGuide.swift; sourceTree = "<group>"; };
+		DF60A8EB249187B900404C52 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		DF60A8EC249187B900404C52 /* FiltersArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersArray.swift; sourceTree = "<group>"; };
+		DF60A8ED249187B900404C52 /* VSTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSTextField.swift; sourceTree = "<group>"; };
+		DF60A8EF249187B900404C52 /* MPGTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGTextField.h; sourceTree = "<group>"; };
+		DF60A8F0249187B900404C52 /* APPinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPinViewController.h; sourceTree = "<group>"; };
+		DF60A8F1249187B900404C52 /* APPinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPinView.h; sourceTree = "<group>"; };
+		DF60A8F2249187B900404C52 /* Jazz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jazz.h; sourceTree = "<group>"; };
+		DF60A8F3249187B900404C52 /* Bootstraper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bootstraper.swift; sourceTree = "<group>"; };
+		DF60A8F5249187B900404C52 /* PingSentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingSentViewController.swift; sourceTree = "<group>"; };
+		DF60A8F6249187B900404C52 /* ItemListingMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListingMapViewController.swift; sourceTree = "<group>"; };
+		DF60A8F7249187B900404C52 /* PingHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingHistoryViewController.swift; sourceTree = "<group>"; };
+		DF60A8F8249187B900404C52 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		DF60A8F9249187B900404C52 /* PurchaseHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseHistoryViewController.swift; sourceTree = "<group>"; };
+		DF60A8FA249187B900404C52 /* CreatePinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePinViewController.swift; sourceTree = "<group>"; };
+		DF60A8FB249187B900404C52 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
+		DF60A8FC249187B900404C52 /* LevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
+		DF60A8FD249187B900404C52 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		DF60A8FE249187B900404C52 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		DF60A8FF249187B900404C52 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		DF60A900249187B900404C52 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DF60A901249187B900404C52 /* LoaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		DF60A902249187B900404C52 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		DF60A903249187B900404C52 /* VouchFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VouchFriendsViewController.swift; sourceTree = "<group>"; };
+		DF60A904249187B900404C52 /* RootListMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootListMapViewController.swift; sourceTree = "<group>"; };
+		DF60A905249187B900404C52 /* VouchPointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VouchPointsViewController.swift; sourceTree = "<group>"; };
+		DF60A906249187B900404C52 /* FullScreenPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenPopUpViewController.swift; sourceTree = "<group>"; };
+		DF60A907249187B900404C52 /* VouchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VouchManager.swift; sourceTree = "<group>"; };
+		DF60A908249187B900404C52 /* RootOfferDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootOfferDetailsViewController.swift; sourceTree = "<group>"; };
+		DF60A909249187B900404C52 /* AllLevelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllLevelsViewController.swift; sourceTree = "<group>"; };
+		DF60A90A249187B900404C52 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DF60A90B249187B900404C52 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		DF60A90C249187B900404C52 /* OfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
+		DF60A90D249187B900404C52 /* AllBadgesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllBadgesViewController.swift; sourceTree = "<group>"; };
+		DF60A90E249187B900404C52 /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		DF60A90F249187B900404C52 /* PinViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinViewViewController.swift; sourceTree = "<group>"; };
+		DF60A910249187B900404C52 /* AlternateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlternateTableViewController.swift; sourceTree = "<group>"; };
+		DF60A911249187B900404C52 /* MyInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInformationViewController.swift; sourceTree = "<group>"; };
+		DF60A912249187B900404C52 /* RootFavPingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootFavPingsViewController.swift; sourceTree = "<group>"; };
+		DF60A913249187B900404C52 /* PingReceivedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingReceivedViewController.swift; sourceTree = "<group>"; };
+		DF60A914249187B900404C52 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		DF60A915249187B900404C52 /* FavouriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		DF60A916249187B900404C52 /* PingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingsViewController.swift; sourceTree = "<group>"; };
+		DF60A917249187B900404C52 /* InviteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
+		DF60A918249187B900404C52 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DF60A919249187B900404C52 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		DF60A91A249187B900404C52 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		DF60A91B249187B900404C52 /* VouchMapListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VouchMapListingViewController.swift; sourceTree = "<group>"; };
+		DF60A91C249187B900404C52 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		DF60A91E249187B900404C52 /* SucessRedeemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SucessRedeemView.swift; sourceTree = "<group>"; };
+		DF60A920249187B900404C52 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A921249187B900404C52 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		DF60A922249187B900404C52 /* DataWithLockTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataWithLockTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A923249187B900404C52 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A924249187B900404C52 /* MainDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A925249187B900404C52 /* OfferedInProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferedInProductTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A926249187B900404C52 /* IconCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF60A927249187B900404C52 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A928249187B900404C52 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A929249187B900404C52 /* AlternateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlternateTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A92A249187B900404C52 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A92B249187B900404C52 /* BannerImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF60A92C249187B900404C52 /* DataWithoutLockTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataWithoutLockTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A92D249187B900404C52 /* NotificationImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationImageTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A92E249187B900404C52 /* DetailsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF60A92F249187B900404C52 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF60A930249187B900404C52 /* PingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A931249187B900404C52 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF60A932249187B900404C52 /* AreaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A933249187B900404C52 /* OfferDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A934249187B900404C52 /* SelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A935249187B900404C52 /* OptionsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF60A936249187B900404C52 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A937249187B900404C52 /* DashboardOfferIconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardOfferIconCell.swift; sourceTree = "<group>"; };
+		DF60A938249187B900404C52 /* ItemListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A939249187B900404C52 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A93A249187B900404C52 /* DetailMapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMapTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A93B249187B900404C52 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A93C249187B900404C52 /* AllLevelBagdeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllLevelBagdeTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A93D249187B900404C52 /* CellPopUpTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellPopUpTable.swift; sourceTree = "<group>"; };
+		DF60A93E249187B900404C52 /* DashboardOfferBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardOfferBannerCell.swift; sourceTree = "<group>"; };
+		DF60A93F249187B900404C52 /* DetailListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailListCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF60A940249187B900404C52 /* CompanyDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A941249187B900404C52 /* NotificationTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTextTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A942249187B900404C52 /* HomeVendorLogoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVendorLogoTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A943249187B900404C52 /* DataWithSwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataWithSwitchTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A944249187B900404C52 /* VoucherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoucherTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A945249187B900404C52 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		DF60A946249187B900404C52 /* GifLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifLoader.swift; sourceTree = "<group>"; };
+		DF60A947249187B900404C52 /* View_Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View_Profile.swift; sourceTree = "<group>"; };
+		DF60A948249187B900404C52 /* FilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		DF60A949249187B900404C52 /* RedeemPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedeemPinView.swift; sourceTree = "<group>"; };
+		DF60A94A249187B900404C52 /* SelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
+		DF60A94B249187B900404C52 /* ViewOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewOffer.swift; sourceTree = "<group>"; };
+		DF60A94C249187B900404C52 /* RedeemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedeemView.swift; sourceTree = "<group>"; };
+		DF60A94D249187B900404C52 /* FilterSimpleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterSimpleCell.swift; sourceTree = "<group>"; };
+		DF60A94E249187B900404C52 /* VSPINView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSPINView.swift; sourceTree = "<group>"; };
+		DF60A94F249187B900404C52 /* FriendSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearch.swift; sourceTree = "<group>"; };
+		DF60A950249187B900404C52 /* Voucher365-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Voucher365-Bridging-Header.h"; sourceTree = "<group>"; };
 		DF85433A24915B5E00EA7594 /* Jazz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jazz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF85433D24915B5E00EA7594 /* Jazz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jazz.h; sourceTree = "<group>"; };
-		DF85433E24915B5E00EA7594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +430,384 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0585A91EFE319BF1B94AADB0 /* Pods_Jazz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D09B63FB60A9DA8FDC3AC865 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				901417C713960B4AAA28F0D2 /* Pods-Jazz.debug.xcconfig */,
+				5ED1DA8AC927167027BA44ED /* Pods-Jazz.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF60A872249187B900404C52 /* Jazz */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A8F2249187B900404C52 /* Jazz.h */,
+				DF60A8F3249187B900404C52 /* Bootstraper.swift */,
+				DF60A8CF249187B900404C52 /* Jazz.plist */,
+				DF60A950249187B900404C52 /* Voucher365-Bridging-Header.h */,
+				DF60A873249187B900404C52 /* Xibs */,
+				DF60A881249187B900404C52 /* DataBase */,
+				DF60A887249187B900404C52 /* OtherClasses */,
+				DF60A88A249187B900404C52 /* ThirdPartyClasses */,
+				DF60A893249187B900404C52 /* Servicelayer */,
+				DF60A896249187B900404C52 /* StoryBoard */,
+				DF60A89A249187B900404C52 /* AnimationsImages */,
+				DF60A8CC249187B900404C52 /* Resources */,
+				DF60A8D0249187B900404C52 /* Models */,
+				DF60A8E2249187B900404C52 /* Utilities */,
+				DF60A8EE249187B900404C52 /* Headers */,
+				DF60A8F4249187B900404C52 /* Controllers */,
+				DF60A91D249187B900404C52 /* Views */,
+			);
+			path = Jazz;
+			sourceTree = "<group>";
+		};
+		DF60A873249187B900404C52 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A874249187B900404C52 /* APPinViewController.xib */,
+				DF60A875249187B900404C52 /* RedeemPinView.xib */,
+				DF60A876249187B900404C52 /* FriendSearch.xib */,
+				DF60A877249187B900404C52 /* SelectionTableViewCell.xib */,
+				DF60A878249187B900404C52 /* FilterCell.xib */,
+				DF60A879249187B900404C52 /* View_Profile.xib */,
+				DF60A87A249187B900404C52 /* FilterSimpleCell.xib */,
+				DF60A87B249187B900404C52 /* GifLoader.xib */,
+				DF60A87C249187B900404C52 /* ViewOffer.xib */,
+				DF60A87D249187B900404C52 /* VSPINView.xib */,
+				DF60A87E249187B900404C52 /* HomeTableViewCell.xib */,
+				DF60A87F249187B900404C52 /* RedeemView.xib */,
+				DF60A880249187B900404C52 /* SucessRedeemView.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		DF60A881249187B900404C52 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A882249187B900404C52 /* StorageService */,
+				DF60A884249187B900404C52 /* Model */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		DF60A882249187B900404C52 /* StorageService */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A883249187B900404C52 /* StorageService.swift */,
+			);
+			path = StorageService;
+			sourceTree = "<group>";
+		};
+		DF60A884249187B900404C52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A885249187B900404C52 /* VouchCity.swift */,
+				DF60A886249187B900404C52 /* VouchUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF60A887249187B900404C52 /* OtherClasses */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A888249187B900404C52 /* APPinViewController.m */,
+				DF60A889249187B900404C52 /* APPinView.m */,
+			);
+			path = OtherClasses;
+			sourceTree = "<group>";
+		};
+		DF60A88A249187B900404C52 /* ThirdPartyClasses */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A88B249187B900404C52 /* MPGTextField */,
+				DF60A88D249187B900404C52 /* APPinView */,
+			);
+			path = ThirdPartyClasses;
+			sourceTree = "<group>";
+		};
+		DF60A88B249187B900404C52 /* MPGTextField */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A88C249187B900404C52 /* MPGTextField.m */,
+			);
+			path = MPGTextField;
+			sourceTree = "<group>";
+		};
+		DF60A88D249187B900404C52 /* APPinView */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A88E249187B900404C52 /* pinViewSelected.png */,
+				DF60A88F249187B900404C52 /* pinViewSelected@2x.png */,
+				DF60A890249187B900404C52 /* pinViewUnSelected.png */,
+				DF60A891249187B900404C52 /* splash_loading.gif */,
+				DF60A892249187B900404C52 /* pinViewUnSelected@2x.png */,
+			);
+			path = APPinView;
+			sourceTree = "<group>";
+		};
+		DF60A893249187B900404C52 /* Servicelayer */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A894249187B900404C52 /* ServiceLayer.swift */,
+				DF60A895249187B900404C52 /* ServiceWrapper.swift */,
+			);
+			path = Servicelayer;
+			sourceTree = "<group>";
+		};
+		DF60A896249187B900404C52 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A897249187B900404C52 /* Account-Pso.storyboard */,
+				DF60A898249187B900404C52 /* Login-Pso.storyboard */,
+				DF60A899249187B900404C52 /* Main-Pso.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		DF60A89A249187B900404C52 /* AnimationsImages */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A89B249187B900404C52 /* GIF-02.jpg */,
+				DF60A89C249187B900404C52 /* GIF-16.jpg */,
+				DF60A89D249187B900404C52 /* GIF-17.jpg */,
+				DF60A89E249187B900404C52 /* GIF-03.jpg */,
+				DF60A89F249187B900404C52 /* GIF-29.jpg */,
+				DF60A8A0249187B900404C52 /* GIF-15.jpg */,
+				DF60A8A1249187B900404C52 /* GIF-01.jpg */,
+				DF60A8A2249187B900404C52 /* GIF-14.jpg */,
+				DF60A8A3249187B900404C52 /* GIF-28.jpg */,
+				DF60A8A4249187B900404C52 /* GIF-10.jpg */,
+				DF60A8A5249187B900404C52 /* GIF-04.jpg */,
+				DF60A8A6249187B900404C52 /* GIF-38.jpg */,
+				DF60A8A7249187B900404C52 /* GIF-39.jpg */,
+				DF60A8A8249187B900404C52 /* GIF-05.jpg */,
+				DF60A8A9249187B900404C52 /* GIF-11.jpg */,
+				DF60A8AA249187B900404C52 /* GIF-07.jpg */,
+				DF60A8AB249187B900404C52 /* GIF-13.jpg */,
+				DF60A8AC249187B900404C52 /* GIF-12.jpg */,
+				DF60A8AD249187B900404C52 /* GIF-06.jpg */,
+				DF60A8AE249187B900404C52 /* GIF-48.jpg */,
+				DF60A8AF249187B900404C52 /* splash11.jpg */,
+				DF60A8B0249187B900404C52 /* GIF-40.jpg */,
+				DF60A8B1249187B900404C52 /* GIF-41.jpg */,
+				DF60A8B2249187B900404C52 /* GIF-43.jpg */,
+				DF60A8B3249187B900404C52 /* GIF-42.jpg */,
+				DF60A8B4249187B900404C52 /* GIF-46.jpg */,
+				DF60A8B5249187B900404C52 /* GIF-47.jpg */,
+				DF60A8B6249187B900404C52 /* GIF-45.jpg */,
+				DF60A8B7249187B900404C52 /* GIF-44.jpg */,
+				DF60A8B8249187B900404C52 /* GIF-23.jpg */,
+				DF60A8B9249187B900404C52 /* GIF-37.jpg */,
+				DF60A8BA249187B900404C52 /* GIF-36.jpg */,
+				DF60A8BB249187B900404C52 /* GIF-22.jpg */,
+				DF60A8BC249187B900404C52 /* GIF-08.jpg */,
+				DF60A8BD249187B900404C52 /* GIF-34.jpg */,
+				DF60A8BE249187B900404C52 /* GIF-20.jpg */,
+				DF60A8BF249187B900404C52 /* GIF-21.jpg */,
+				DF60A8C0249187B900404C52 /* GIF-35.jpg */,
+				DF60A8C1249187B900404C52 /* GIF-09.jpg */,
+				DF60A8C2249187B900404C52 /* GIF-31.jpg */,
+				DF60A8C3249187B900404C52 /* GIF-25.jpg */,
+				DF60A8C4249187B900404C52 /* GIF-19.jpg */,
+				DF60A8C5249187B900404C52 /* GIF-18.jpg */,
+				DF60A8C6249187B900404C52 /* GIF-24.jpg */,
+				DF60A8C7249187B900404C52 /* GIF-30.jpg */,
+				DF60A8C8249187B900404C52 /* GIF-26.jpg */,
+				DF60A8C9249187B900404C52 /* GIF-32.jpg */,
+				DF60A8CA249187B900404C52 /* GIF-33.jpg */,
+				DF60A8CB249187B900404C52 /* GIF-27.jpg */,
+			);
+			path = AnimationsImages;
+			sourceTree = "<group>";
+		};
+		DF60A8CC249187B900404C52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A8CD249187B900404C52 /* A.xcassets */,
+				DF60A8CE249187B900404C52 /* loader.gif */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF60A8D0249187B900404C52 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A8D1249187B900404C52 /* Offer.swift */,
+				DF60A8D2249187B900404C52 /* Location.swift */,
+				DF60A8D3249187B900404C52 /* CompanyDetail.swift */,
+				DF60A8D4249187B900404C52 /* Friend.swift */,
+				DF60A8D5249187B900404C52 /* Ping.swift */,
+				DF60A8D6249187B900404C52 /* NotificationVeer.swift */,
+				DF60A8D7249187B900404C52 /* HomeSaving.swift */,
+				DF60A8D8249187B900404C52 /* VoucherData.swift */,
+				DF60A8D9249187B900404C52 /* UserProfile.swift */,
+				DF60A8DA249187B900404C52 /* User.swift */,
+				DF60A8DB249187B900404C52 /* Category.swift */,
+				DF60A8DC249187B900404C52 /* Voucher.swift */,
+				DF60A8DD249187B900404C52 /* History.swift */,
+				DF60A8DE249187B900404C52 /* Badge.swift */,
+				DF60A8DF249187B900404C52 /* Vouchers.swift */,
+				DF60A8E0249187B900404C52 /* Level.swift */,
+				DF60A8E1249187B900404C52 /* PopUp.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF60A8E2249187B900404C52 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A8E3249187B900404C52 /* Constants.swift */,
+				DF60A8E4249187B900404C52 /* Utilities.swift */,
+				DF60A8E5249187B900404C52 /* VSLabel.swift */,
+				DF60A8E6249187B900404C52 /* VSButton.swift */,
+				DF60A8E7249187B900404C52 /* Countries.swift */,
+				DF60A8E8249187B900404C52 /* UIBarButtonItem.ActionSheetPicker.swift */,
+				DF60A8E9249187B900404C52 /* extension.swift */,
+				DF60A8EA249187B900404C52 /* UIColor.StyleGuide.swift */,
+				DF60A8EB249187B900404C52 /* String.swift */,
+				DF60A8EC249187B900404C52 /* FiltersArray.swift */,
+				DF60A8ED249187B900404C52 /* VSTextField.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DF60A8EE249187B900404C52 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A8EF249187B900404C52 /* MPGTextField.h */,
+				DF60A8F0249187B900404C52 /* APPinViewController.h */,
+				DF60A8F1249187B900404C52 /* APPinView.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		DF60A8F4249187B900404C52 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A8F5249187B900404C52 /* PingSentViewController.swift */,
+				DF60A8F6249187B900404C52 /* ItemListingMapViewController.swift */,
+				DF60A8F7249187B900404C52 /* PingHistoryViewController.swift */,
+				DF60A8F8249187B900404C52 /* SearchTableViewController.swift */,
+				DF60A8F9249187B900404C52 /* PurchaseHistoryViewController.swift */,
+				DF60A8FA249187B900404C52 /* CreatePinViewController.swift */,
+				DF60A8FB249187B900404C52 /* TutorialPageViewController.swift */,
+				DF60A8FC249187B900404C52 /* LevelViewController.swift */,
+				DF60A8FD249187B900404C52 /* LocationsViewController.swift */,
+				DF60A8FE249187B900404C52 /* RootViewController.swift */,
+				DF60A8FF249187B900404C52 /* ProductViewController.swift */,
+				DF60A900249187B900404C52 /* DetailViewController.swift */,
+				DF60A901249187B900404C52 /* LoaderViewController.swift */,
+				DF60A902249187B900404C52 /* WelcomeViewController.swift */,
+				DF60A903249187B900404C52 /* VouchFriendsViewController.swift */,
+				DF60A904249187B900404C52 /* RootListMapViewController.swift */,
+				DF60A905249187B900404C52 /* VouchPointsViewController.swift */,
+				DF60A906249187B900404C52 /* FullScreenPopUpViewController.swift */,
+				DF60A907249187B900404C52 /* VouchManager.swift */,
+				DF60A908249187B900404C52 /* RootOfferDetailsViewController.swift */,
+				DF60A909249187B900404C52 /* AllLevelsViewController.swift */,
+				DF60A90A249187B900404C52 /* HomeViewController.swift */,
+				DF60A90B249187B900404C52 /* TutorialViewController.swift */,
+				DF60A90C249187B900404C52 /* OfferViewController.swift */,
+				DF60A90D249187B900404C52 /* AllBadgesViewController.swift */,
+				DF60A90E249187B900404C52 /* testViewController.swift */,
+				DF60A90F249187B900404C52 /* PinViewViewController.swift */,
+				DF60A910249187B900404C52 /* AlternateTableViewController.swift */,
+				DF60A911249187B900404C52 /* MyInformationViewController.swift */,
+				DF60A912249187B900404C52 /* RootFavPingsViewController.swift */,
+				DF60A913249187B900404C52 /* PingReceivedViewController.swift */,
+				DF60A914249187B900404C52 /* BrowserViewController.swift */,
+				DF60A915249187B900404C52 /* FavouriteViewController.swift */,
+				DF60A916249187B900404C52 /* PingsViewController.swift */,
+				DF60A917249187B900404C52 /* InviteViewController.swift */,
+				DF60A918249187B900404C52 /* ProfileViewController.swift */,
+				DF60A919249187B900404C52 /* DetailsViewController.swift */,
+				DF60A91A249187B900404C52 /* NotificationViewController.swift */,
+				DF60A91B249187B900404C52 /* VouchMapListingViewController.swift */,
+				DF60A91C249187B900404C52 /* AccountViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DF60A91D249187B900404C52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A91E249187B900404C52 /* SucessRedeemView.swift */,
+				DF60A91F249187B900404C52 /* Cells */,
+				DF60A946249187B900404C52 /* GifLoader.swift */,
+				DF60A947249187B900404C52 /* View_Profile.swift */,
+				DF60A948249187B900404C52 /* FilterView.swift */,
+				DF60A949249187B900404C52 /* RedeemPinView.swift */,
+				DF60A94A249187B900404C52 /* SelectionView.swift */,
+				DF60A94B249187B900404C52 /* ViewOffer.swift */,
+				DF60A94C249187B900404C52 /* RedeemView.swift */,
+				DF60A94D249187B900404C52 /* FilterSimpleCell.swift */,
+				DF60A94E249187B900404C52 /* VSPINView.swift */,
+				DF60A94F249187B900404C52 /* FriendSearch.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF60A91F249187B900404C52 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A920249187B900404C52 /* HistoryTableViewCell.swift */,
+				DF60A921249187B900404C52 /* FilterCell.swift */,
+				DF60A922249187B900404C52 /* DataWithLockTableViewCell.swift */,
+				DF60A923249187B900404C52 /* HomeTableViewCell.swift */,
+				DF60A924249187B900404C52 /* MainDetailsTableViewCell.swift */,
+				DF60A925249187B900404C52 /* OfferedInProductTableViewCell.swift */,
+				DF60A926249187B900404C52 /* IconCollectionViewCell.swift */,
+				DF60A927249187B900404C52 /* FavouriteTableViewCell.swift */,
+				DF60A928249187B900404C52 /* LocationTableViewCell.swift */,
+				DF60A929249187B900404C52 /* AlternateTableViewCell.swift */,
+				DF60A92A249187B900404C52 /* AccountTableViewCell.swift */,
+				DF60A92B249187B900404C52 /* BannerImageCollectionViewCell.swift */,
+				DF60A92C249187B900404C52 /* DataWithoutLockTableViewCell.swift */,
+				DF60A92D249187B900404C52 /* NotificationImageTableViewCell.swift */,
+				DF60A92E249187B900404C52 /* DetailsCollectionViewCell.swift */,
+				DF60A92F249187B900404C52 /* BannerCollectionViewCell.swift */,
+				DF60A930249187B900404C52 /* PingTableViewCell.swift */,
+				DF60A931249187B900404C52 /* DataCollectionViewCell.swift */,
+				DF60A932249187B900404C52 /* AreaTableViewCell.swift */,
+				DF60A933249187B900404C52 /* OfferDetailsTableViewCell.swift */,
+				DF60A934249187B900404C52 /* SelectionTableViewCell.swift */,
+				DF60A935249187B900404C52 /* OptionsCollectionViewCell.swift */,
+				DF60A936249187B900404C52 /* CategoryTableViewCell.swift */,
+				DF60A937249187B900404C52 /* DashboardOfferIconCell.swift */,
+				DF60A938249187B900404C52 /* ItemListTableViewCell.swift */,
+				DF60A939249187B900404C52 /* ProductTableViewCell.swift */,
+				DF60A93A249187B900404C52 /* DetailMapTableViewCell.swift */,
+				DF60A93B249187B900404C52 /* SearchTableViewCell.swift */,
+				DF60A93C249187B900404C52 /* AllLevelBagdeTableViewCell.swift */,
+				DF60A93D249187B900404C52 /* CellPopUpTable.swift */,
+				DF60A93E249187B900404C52 /* DashboardOfferBannerCell.swift */,
+				DF60A93F249187B900404C52 /* DetailListCollectionViewCell.swift */,
+				DF60A940249187B900404C52 /* CompanyDescriptionTableViewCell.swift */,
+				DF60A941249187B900404C52 /* NotificationTextTableViewCell.swift */,
+				DF60A942249187B900404C52 /* HomeVendorLogoTableViewCell.swift */,
+				DF60A943249187B900404C52 /* DataWithSwitchTableViewCell.swift */,
+				DF60A944249187B900404C52 /* VoucherTableViewCell.swift */,
+				DF60A945249187B900404C52 /* HeaderTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		DF85433024915B5E00EA7594 = {
 			isa = PBXGroup;
 			children = (
-				DF85433C24915B5E00EA7594 /* Jazz */,
+				DF60A872249187B900404C52 /* Jazz */,
 				DF85433B24915B5E00EA7594 /* Products */,
+				D09B63FB60A9DA8FDC3AC865 /* Pods */,
+				F214C37F1006A8B90CBAC582 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,13 +819,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DF85433C24915B5E00EA7594 /* Jazz */ = {
+		F214C37F1006A8B90CBAC582 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF85433D24915B5E00EA7594 /* Jazz.h */,
-				DF85433E24915B5E00EA7594 /* Info.plist */,
+				9DC2049B8014A5647F4D2321 /* Pods_Jazz.framework */,
 			);
-			path = Jazz;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +834,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF85433F24915B5E00EA7594 /* Jazz.h in Headers */,
+				DF60A9BF249187B900404C52 /* APPinViewController.h in Headers */,
+				DF60A9BE249187B900404C52 /* MPGTextField.h in Headers */,
+				DF60A9C0249187B900404C52 /* APPinView.h in Headers */,
+				DF60A9C1249187B900404C52 /* Jazz.h in Headers */,
+				DF60AA1C249187BA00404C52 /* Voucher365-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,9 +850,11 @@
 			buildConfigurationList = DF85434224915B5E00EA7594 /* Build configuration list for PBXNativeTarget "Jazz" */;
 			buildPhases = (
 				DF85433524915B5E00EA7594 /* Headers */,
+				2BFD72681F3F0405CEDAB013 /* [CP] Check Pods Manifest.lock */,
 				DF85433624915B5E00EA7594 /* Sources */,
 				DF85433724915B5E00EA7594 /* Frameworks */,
 				DF85433824915B5E00EA7594 /* Resources */,
+				241D1565BCCAF75BEB62DCED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -121,16 +902,257 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF60A978249187B900404C52 /* GIF-04.jpg in Resources */,
+				DF60A983249187B900404C52 /* GIF-40.jpg in Resources */,
+				DF60A98B249187B900404C52 /* GIF-23.jpg in Resources */,
+				DF60A989249187B900404C52 /* GIF-45.jpg in Resources */,
+				DF60A97B249187B900404C52 /* GIF-05.jpg in Resources */,
+				DF60A97D249187B900404C52 /* GIF-07.jpg in Resources */,
+				DF60A95B249187B900404C52 /* HomeTableViewCell.xib in Resources */,
+				DF60A995249187B900404C52 /* GIF-31.jpg in Resources */,
+				DF60A964249187B900404C52 /* pinViewSelected.png in Resources */,
+				DF60A96E249187B900404C52 /* GIF-02.jpg in Resources */,
+				DF60A9A1249187B900404C52 /* Jazz.plist in Resources */,
+				DF60A956249187B900404C52 /* View_Profile.xib in Resources */,
+				DF60A95A249187B900404C52 /* VSPINView.xib in Resources */,
+				DF60A974249187B900404C52 /* GIF-01.jpg in Resources */,
+				DF60A99B249187B900404C52 /* GIF-26.jpg in Resources */,
+				DF60A997249187B900404C52 /* GIF-19.jpg in Resources */,
+				DF60A98E249187B900404C52 /* GIF-22.jpg in Resources */,
+				DF60A987249187B900404C52 /* GIF-46.jpg in Resources */,
+				DF60A976249187B900404C52 /* GIF-28.jpg in Resources */,
+				DF60A967249187B900404C52 /* splash_loading.gif in Resources */,
+				DF60A98F249187B900404C52 /* GIF-08.jpg in Resources */,
+				DF60A97F249187B900404C52 /* GIF-12.jpg in Resources */,
+				DF60A957249187B900404C52 /* FilterSimpleCell.xib in Resources */,
+				DF60A96B249187B900404C52 /* Account-Pso.storyboard in Resources */,
+				DF60A96C249187B900404C52 /* Login-Pso.storyboard in Resources */,
+				DF60A994249187B900404C52 /* GIF-09.jpg in Resources */,
+				DF60A959249187B900404C52 /* ViewOffer.xib in Resources */,
+				DF60A966249187B900404C52 /* pinViewUnSelected.png in Resources */,
+				DF60A993249187B900404C52 /* GIF-35.jpg in Resources */,
+				DF60A973249187B900404C52 /* GIF-15.jpg in Resources */,
+				DF60A971249187B900404C52 /* GIF-03.jpg in Resources */,
+				DF60A95D249187B900404C52 /* SucessRedeemView.xib in Resources */,
+				DF60A99E249187B900404C52 /* GIF-27.jpg in Resources */,
+				DF60A996249187B900404C52 /* GIF-25.jpg in Resources */,
+				DF60A982249187B900404C52 /* splash11.jpg in Resources */,
+				DF60A992249187B900404C52 /* GIF-21.jpg in Resources */,
+				DF60A97C249187B900404C52 /* GIF-11.jpg in Resources */,
+				DF60A972249187B900404C52 /* GIF-29.jpg in Resources */,
+				DF60A981249187B900404C52 /* GIF-48.jpg in Resources */,
+				DF60A970249187B900404C52 /* GIF-17.jpg in Resources */,
+				DF60A998249187B900404C52 /* GIF-18.jpg in Resources */,
+				DF60A97E249187B900404C52 /* GIF-13.jpg in Resources */,
+				DF60A98C249187B900404C52 /* GIF-37.jpg in Resources */,
+				DF60A954249187B900404C52 /* SelectionTableViewCell.xib in Resources */,
+				DF60A96D249187B900404C52 /* Main-Pso.storyboard in Resources */,
+				DF60A980249187B900404C52 /* GIF-06.jpg in Resources */,
+				DF60A9A0249187B900404C52 /* loader.gif in Resources */,
+				DF60A986249187B900404C52 /* GIF-42.jpg in Resources */,
+				DF60A958249187B900404C52 /* GifLoader.xib in Resources */,
+				DF60A985249187B900404C52 /* GIF-43.jpg in Resources */,
+				DF60A979249187B900404C52 /* GIF-38.jpg in Resources */,
+				DF60A98D249187B900404C52 /* GIF-36.jpg in Resources */,
+				DF60A98A249187B900404C52 /* GIF-44.jpg in Resources */,
+				DF60A99F249187B900404C52 /* A.xcassets in Resources */,
+				DF60A965249187B900404C52 /* pinViewSelected@2x.png in Resources */,
+				DF60A99D249187B900404C52 /* GIF-33.jpg in Resources */,
+				DF60A990249187B900404C52 /* GIF-34.jpg in Resources */,
+				DF60A99A249187B900404C52 /* GIF-30.jpg in Resources */,
+				DF60A952249187B900404C52 /* RedeemPinView.xib in Resources */,
+				DF60A96F249187B900404C52 /* GIF-16.jpg in Resources */,
+				DF60A95C249187B900404C52 /* RedeemView.xib in Resources */,
+				DF60A988249187B900404C52 /* GIF-47.jpg in Resources */,
+				DF60A953249187B900404C52 /* FriendSearch.xib in Resources */,
+				DF60A999249187B900404C52 /* GIF-24.jpg in Resources */,
+				DF60A984249187B900404C52 /* GIF-41.jpg in Resources */,
+				DF60A975249187B900404C52 /* GIF-14.jpg in Resources */,
+				DF60A977249187B900404C52 /* GIF-10.jpg in Resources */,
+				DF60A97A249187B900404C52 /* GIF-39.jpg in Resources */,
+				DF60A968249187B900404C52 /* pinViewUnSelected@2x.png in Resources */,
+				DF60A951249187B900404C52 /* APPinViewController.xib in Resources */,
+				DF60A99C249187B900404C52 /* GIF-32.jpg in Resources */,
+				DF60A955249187B900404C52 /* FilterCell.xib in Resources */,
+				DF60A991249187B900404C52 /* GIF-20.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		241D1565BCCAF75BEB62DCED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jazz/Pods-Jazz-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jazz/Pods-Jazz-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jazz/Pods-Jazz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BFD72681F3F0405CEDAB013 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jazz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DF85433624915B5E00EA7594 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF60AA0E249187BA00404C52 /* HomeVendorLogoTableViewCell.swift in Sources */,
+				DF60A9A7249187B900404C52 /* NotificationVeer.swift in Sources */,
+				DF60A9C2249187B900404C52 /* Bootstraper.swift in Sources */,
+				DF60A9EF249187BA00404C52 /* HomeTableViewCell.swift in Sources */,
+				DF60A963249187B900404C52 /* MPGTextField.m in Sources */,
+				DF60A9F0249187BA00404C52 /* MainDetailsTableViewCell.swift in Sources */,
+				DF60AA12249187BA00404C52 /* GifLoader.swift in Sources */,
+				DF60A9AC249187B900404C52 /* Category.swift in Sources */,
+				DF60A9A9249187B900404C52 /* VoucherData.swift in Sources */,
+				DF60A96A249187B900404C52 /* ServiceWrapper.swift in Sources */,
+				DF60A9CD249187B900404C52 /* ProductViewController.swift in Sources */,
+				DF60A9A6249187B900404C52 /* Ping.swift in Sources */,
+				DF60A9F6249187BA00404C52 /* AccountTableViewCell.swift in Sources */,
+				DF60A9B1249187B900404C52 /* Level.swift in Sources */,
+				DF60A9B9249187B900404C52 /* extension.swift in Sources */,
+				DF60A9B6249187B900404C52 /* VSButton.swift in Sources */,
+				DF60AA02249187BA00404C52 /* CategoryTableViewCell.swift in Sources */,
+				DF60A9F8249187BA00404C52 /* DataWithoutLockTableViewCell.swift in Sources */,
+				DF60A9E0249187B900404C52 /* RootFavPingsViewController.swift in Sources */,
+				DF60A9C3249187B900404C52 /* PingSentViewController.swift in Sources */,
+				DF60A9D1249187B900404C52 /* VouchFriendsViewController.swift in Sources */,
+				DF60AA1A249187BA00404C52 /* VSPINView.swift in Sources */,
+				DF60A9B3249187B900404C52 /* Constants.swift in Sources */,
+				DF60A9DB249187B900404C52 /* AllBadgesViewController.swift in Sources */,
+				DF60AA0D249187BA00404C52 /* NotificationTextTableViewCell.swift in Sources */,
+				DF60A9BD249187B900404C52 /* VSTextField.swift in Sources */,
+				DF60A9F3249187BA00404C52 /* FavouriteTableViewCell.swift in Sources */,
+				DF60A9A3249187B900404C52 /* Location.swift in Sources */,
+				DF60AA10249187BA00404C52 /* VoucherTableViewCell.swift in Sources */,
+				DF60A9E3249187B900404C52 /* FavouriteViewController.swift in Sources */,
+				DF60A9DA249187B900404C52 /* OfferViewController.swift in Sources */,
+				DF60A9A5249187B900404C52 /* Friend.swift in Sources */,
+				DF60AA08249187BA00404C52 /* AllLevelBagdeTableViewCell.swift in Sources */,
+				DF60A9B8249187B900404C52 /* UIBarButtonItem.ActionSheetPicker.swift in Sources */,
+				DF60A9EC249187BA00404C52 /* HistoryTableViewCell.swift in Sources */,
+				DF60A9FE249187BA00404C52 /* AreaTableViewCell.swift in Sources */,
+				DF60AA17249187BA00404C52 /* ViewOffer.swift in Sources */,
+				DF60A9F5249187BA00404C52 /* AlternateTableViewCell.swift in Sources */,
+				DF60A9EB249187BA00404C52 /* SucessRedeemView.swift in Sources */,
+				DF60A9AD249187B900404C52 /* Voucher.swift in Sources */,
+				DF60AA05249187BA00404C52 /* ProductTableViewCell.swift in Sources */,
+				DF60A9F7249187BA00404C52 /* BannerImageCollectionViewCell.swift in Sources */,
+				DF60A9C6249187B900404C52 /* SearchTableViewController.swift in Sources */,
+				DF60A9C9249187B900404C52 /* TutorialPageViewController.swift in Sources */,
+				DF60A9CE249187B900404C52 /* DetailViewController.swift in Sources */,
+				DF60A9D9249187B900404C52 /* TutorialViewController.swift in Sources */,
+				DF60A9F2249187BA00404C52 /* IconCollectionViewCell.swift in Sources */,
+				DF60A9E5249187B900404C52 /* InviteViewController.swift in Sources */,
+				DF60A9E1249187B900404C52 /* PingReceivedViewController.swift in Sources */,
+				DF60A9E4249187B900404C52 /* PingsViewController.swift in Sources */,
+				DF60AA0C249187BA00404C52 /* CompanyDescriptionTableViewCell.swift in Sources */,
+				DF60AA07249187BA00404C52 /* SearchTableViewCell.swift in Sources */,
+				DF60AA01249187BA00404C52 /* OptionsCollectionViewCell.swift in Sources */,
+				DF60A9EE249187BA00404C52 /* DataWithLockTableViewCell.swift in Sources */,
+				DF60A9BB249187B900404C52 /* String.swift in Sources */,
+				DF60A9F1249187BA00404C52 /* OfferedInProductTableViewCell.swift in Sources */,
+				DF60A9AE249187B900404C52 /* History.swift in Sources */,
+				DF60A9CA249187B900404C52 /* LevelViewController.swift in Sources */,
+				DF60A9BC249187B900404C52 /* FiltersArray.swift in Sources */,
+				DF60A9CF249187B900404C52 /* LoaderViewController.swift in Sources */,
+				DF60A9E8249187BA00404C52 /* NotificationViewController.swift in Sources */,
+				DF60A9DC249187B900404C52 /* testViewController.swift in Sources */,
+				DF60A9D7249187B900404C52 /* AllLevelsViewController.swift in Sources */,
+				DF60A95F249187B900404C52 /* VouchCity.swift in Sources */,
+				DF60A9D2249187B900404C52 /* RootListMapViewController.swift in Sources */,
+				DF60A960249187B900404C52 /* VouchUser.swift in Sources */,
+				DF60A95E249187B900404C52 /* StorageService.swift in Sources */,
+				DF60A9B4249187B900404C52 /* Utilities.swift in Sources */,
+				DF60A9AF249187B900404C52 /* Badge.swift in Sources */,
+				DF60A9A8249187B900404C52 /* HomeSaving.swift in Sources */,
+				DF60A9B2249187B900404C52 /* PopUp.swift in Sources */,
+				DF60A9E7249187B900404C52 /* DetailsViewController.swift in Sources */,
+				DF60A9ED249187BA00404C52 /* FilterCell.swift in Sources */,
+				DF60A9C8249187B900404C52 /* CreatePinViewController.swift in Sources */,
+				DF60A9DF249187B900404C52 /* MyInformationViewController.swift in Sources */,
+				DF60A962249187B900404C52 /* APPinView.m in Sources */,
+				DF60A9D5249187B900404C52 /* VouchManager.swift in Sources */,
+				DF60A9F4249187BA00404C52 /* LocationTableViewCell.swift in Sources */,
+				DF60A9A2249187B900404C52 /* Offer.swift in Sources */,
+				DF60A961249187B900404C52 /* APPinViewController.m in Sources */,
+				DF60A9AB249187B900404C52 /* User.swift in Sources */,
+				DF60AA00249187BA00404C52 /* SelectionTableViewCell.swift in Sources */,
+				DF60A9C4249187B900404C52 /* ItemListingMapViewController.swift in Sources */,
+				DF60AA11249187BA00404C52 /* HeaderTableViewCell.swift in Sources */,
+				DF60A9D0249187B900404C52 /* WelcomeViewController.swift in Sources */,
+				DF60A9FB249187BA00404C52 /* BannerCollectionViewCell.swift in Sources */,
+				DF60A9D6249187B900404C52 /* RootOfferDetailsViewController.swift in Sources */,
+				DF60A9B0249187B900404C52 /* Vouchers.swift in Sources */,
+				DF60A9CB249187B900404C52 /* LocationsViewController.swift in Sources */,
+				DF60AA16249187BA00404C52 /* SelectionView.swift in Sources */,
+				DF60A9D4249187B900404C52 /* FullScreenPopUpViewController.swift in Sources */,
+				DF60AA0F249187BA00404C52 /* DataWithSwitchTableViewCell.swift in Sources */,
+				DF60A9CC249187B900404C52 /* RootViewController.swift in Sources */,
+				DF60AA0B249187BA00404C52 /* DetailListCollectionViewCell.swift in Sources */,
+				DF60AA18249187BA00404C52 /* RedeemView.swift in Sources */,
+				DF60A9C7249187B900404C52 /* PurchaseHistoryViewController.swift in Sources */,
+				DF60A9F9249187BA00404C52 /* NotificationImageTableViewCell.swift in Sources */,
+				DF60AA03249187BA00404C52 /* DashboardOfferIconCell.swift in Sources */,
+				DF60A9C5249187B900404C52 /* PingHistoryViewController.swift in Sources */,
+				DF60AA09249187BA00404C52 /* CellPopUpTable.swift in Sources */,
+				DF60A9DD249187B900404C52 /* PinViewViewController.swift in Sources */,
+				DF60AA0A249187BA00404C52 /* DashboardOfferBannerCell.swift in Sources */,
+				DF60AA15249187BA00404C52 /* RedeemPinView.swift in Sources */,
+				DF60A9A4249187B900404C52 /* CompanyDetail.swift in Sources */,
+				DF60A9EA249187BA00404C52 /* AccountViewController.swift in Sources */,
+				DF60A9B5249187B900404C52 /* VSLabel.swift in Sources */,
+				DF60A9FC249187BA00404C52 /* PingTableViewCell.swift in Sources */,
+				DF60A9E9249187BA00404C52 /* VouchMapListingViewController.swift in Sources */,
+				DF60A9E6249187B900404C52 /* ProfileViewController.swift in Sources */,
+				DF60A9D3249187B900404C52 /* VouchPointsViewController.swift in Sources */,
+				DF60A969249187B900404C52 /* ServiceLayer.swift in Sources */,
+				DF60AA1B249187BA00404C52 /* FriendSearch.swift in Sources */,
+				DF60A9FD249187BA00404C52 /* DataCollectionViewCell.swift in Sources */,
+				DF60A9DE249187B900404C52 /* AlternateTableViewController.swift in Sources */,
+				DF60AA04249187BA00404C52 /* ItemListTableViewCell.swift in Sources */,
+				DF60A9D8249187B900404C52 /* HomeViewController.swift in Sources */,
+				DF60A9B7249187B900404C52 /* Countries.swift in Sources */,
+				DF60A9AA249187B900404C52 /* UserProfile.swift in Sources */,
+				DF60AA14249187BA00404C52 /* FilterView.swift in Sources */,
+				DF60AA06249187BA00404C52 /* DetailMapTableViewCell.swift in Sources */,
+				DF60A9E2249187B900404C52 /* BrowserViewController.swift in Sources */,
+				DF60A9BA249187B900404C52 /* UIColor.StyleGuide.swift in Sources */,
+				DF60A9FA249187BA00404C52 /* DetailsCollectionViewCell.swift in Sources */,
+				DF60AA19249187BA00404C52 /* FilterSimpleCell.swift in Sources */,
+				DF60AA13249187BA00404C52 /* View_Profile.swift in Sources */,
+				DF60A9FF249187BA00404C52 /* OfferDetailsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,13 +1281,14 @@
 		};
 		DF85434324915B5E00EA7594 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 901417C713960B4AAA28F0D2 /* Pods-Jazz.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Jazz/Info.plist;
+				INFOPLIST_FILE = Jazz/Jazz.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -282,13 +1305,14 @@
 		};
 		DF85434424915B5E00EA7594 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED1DA8AC927167027BA44ED /* Pods-Jazz.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Jazz/Info.plist;
+				INFOPLIST_FILE = Jazz/Jazz.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -16,8 +16,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTJ-zO-7bs">
-                                <rect key="frame" x="146.5" y="433" width="121" height="30"/>
-                                <state key="normal" title="Open Takaful Sdk"/>
+                                <rect key="frame" x="155.5" y="433" width="103" height="30"/>
+                                <state key="normal" title="Open Jazz Sdk"/>
                                 <connections>
                                     <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0K8-f2-kTe"/>
                                 </connections>
