@@ -1,0 +1,6 @@
+framework module TakafulVouch {
+  umbrella header "TakafulVouch-umbrella.h"
+
+  export *
+  module * { export * }
+}
